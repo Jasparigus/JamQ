@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+    - "6.11"
+    
+cach:
+    directories:
+        - node_modules
+        
+install:
+    - npm install -g bower
+    - npm install
+    - bower install
+
+script:
+    - npm run test
